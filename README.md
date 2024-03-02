@@ -2,11 +2,9 @@
 
 This Arduino sketch interfaces an LM35 temperature sensor with an Arduino Uno to control the onboard LED based on temperature readings. 
 
-- **Sensor Pin:** A0
-- **LED Pin:** 13
 
 ## Setup
-- The code sets up the LED pin as an output and the sensor pin as an input.
+- The code sets up the LED as output and the sensor as input.
 - Timer 1 is configured with a prescaler of 256 to generate interrupt for every 250 milliseconds.
 - The interrupt service routine (ISR) toggles the LED state based on temperature readings.
 
