@@ -37,7 +37,7 @@ This Arduino sketch interfaces an LM35 temperature sensor with an Arduino Uno to
 
 ## Interrupt Service Routine (ISR)
 - The ISR updates the temperature reading and toggles the LED state accordingly for 250 ms and 500 ms.
-- Upon each interrupt, the ISR increments a counter (`count`) to keep track of time intervals.
+- Upon each interrupt, the ISR increments a counter (`counter`) to keep track of time intervals.
 - The timer is reset (`TCNT1 = 0`) to prepare for the next interrupt.
 - The current temperature is obtained using the `checkTemperature()` function.
 - If the temperature is below 25°C, the LED blinks for every 250 ms, indicating a low temperature condition.
