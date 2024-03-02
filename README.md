@@ -53,5 +53,4 @@ This Arduino sketch interfaces an LM35 temperature sensor with an Arduino Uno to
 - The simulation demonstrates the interaction between the temperature sensor, Arduino Uno, and the LED based on temperature readings.
 - Check out the Tinkercad simulation [here](https://www.tinkercad.com/things/hO9t8GFOT5o-lm35-interface-with-arduino-uno-timer-interrupt?sharecode=vkIi7biMhjhfrOfD4OhYMYCNY2j85iH37Vi5Fm8xEUg).
 
-![Tinkercad Simulation]()
-
+![Tinkercad Simulation](https://github.com/Ancy-AugustinXavier/LM35-Temperature-Control/assets/161932009/963645f8-da11-470f-8d95-7907b2647764)
