@@ -30,7 +30,7 @@ This Arduino sketch interfaces an LM35 temperature sensor with an Arduino Uno to
 
 ## Temperature Monitoring
 - The LM35 temperature sensor reads the analog input and converts it to temperature in Celsius.
-- If the temperature falls below 25°C, the LED blinks every 250 milliseconds.
+- If the temperature falls below 30°C, the LED blinks every 250 milliseconds.
 - If the temperature rises above 30°C, the LED blinks every 500 milliseconds.
 
 ## Interrupt Service Routine (ISR)
@@ -38,7 +38,7 @@ This Arduino sketch interfaces an LM35 temperature sensor with an Arduino Uno to
 - Upon each interrupt, the ISR increments a counter (`counter`) to keep track of time intervals.
 - The timer is reset (`TCNT1 = 0`) to prepare for the next interrupt.
 - The current temperature is obtained using the `checkTemperature()` function.
-- If the temperature is below 25°C, the LED blinks for every 250 ms, indicating a low temperature condition.
+- If the temperature is below 30°C, the LED blinks for every 250 ms, indicating a low temperature condition.
 - If the temperature is above 30°C, checks if the count is even, ensuring it blinks at the next iteration thereby blinking for every 500ms.
 
 ## Procedure
