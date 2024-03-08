@@ -75,7 +75,7 @@ ISR(TIMER1_COMPA_vect)                          // Enters the ISR for every 250 
   counter++;                                   // Increments counter to keep track of time intervals
   TCNT1  = 0;                                 //Reset the timer for next interrupt
   TempinCelcius=checkTemperature();          //Obtain the current temperature 
-  if(TempinCelcius<25)
+  if(TempinCelcius<30)
   {
   counter=0;                                  //Resets the counter and toggle LED once for 250 ms
   Toggle_LED();
